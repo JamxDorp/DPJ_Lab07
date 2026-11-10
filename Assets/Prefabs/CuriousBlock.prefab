@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1981417567540349085}
   - component: {fileID: 6731098861503217604}
+  - component: {fileID: 2855783241247978408}
   m_Layer: 0
   m_Name: Hitbox
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 6666219326988764759}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.089, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47,12 +48,24 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 0.040489733, z: 1}
   m_Center: {x: 0, y: -0.48492077, z: 0}
+--- !u!114 &2855783241247978408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6666219326988764759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66c0369a56ff82940b5b1eba288ae23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hitbox
 --- !u!1 &9174101082384138842
 GameObject:
   m_ObjectHideFlags: 0
@@ -65,6 +78,7 @@ GameObject:
   - component: {fileID: 4766808741470030599}
   - component: {fileID: 1903960543346466800}
   - component: {fileID: 3927482370030344652}
+  - component: {fileID: 2555948412962093994}
   m_Layer: 0
   m_Name: CuriousBlock
   m_TagString: Untagged
@@ -166,3 +180,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2555948412962093994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9174101082384138842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d9e240137b2d94aa9c795bbdd16a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CuriousBlock
+  contained: 1
+  powerUpPrefab: {fileID: 5772721100262750967, guid: b921af5601f8fbb499f2b32b14077f8b, type: 3}
+  coinPrefab: {fileID: 2398149052713066608, guid: 491712675465740459c1870c363cc7aa, type: 3}
+  coinLaunchForce: 5
+  powerUpRiseEffect: 2
+  popAnimationDuration: 0.5
+  popEffect: {fileID: 0}
+  usedMaterial: {fileID: 2100000, guid: d2d33ee74df6012448ecf90762be545b, type: 2}
+  popSfx: {fileID: 8300000, guid: a77cc86a8f83f854589a939becc73253, type: 3}

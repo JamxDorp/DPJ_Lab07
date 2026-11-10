@@ -128,4 +128,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Token
   Value: 10
-  pickupSfx: {fileID: 8300000, guid: 448383d0b20e3f148b7d651eba47c2e4, type: 3}
+  pickupSfx: {fileID: 8300000, guid: e7dc833efad6bb14284e9f882f7e9fcc, type: 3}

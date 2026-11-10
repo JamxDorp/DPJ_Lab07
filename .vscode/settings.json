@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "DPJ_Lab06.slnx"
+    "dotnet.defaultSolution": "DPJ_Lab07.slnx"
 }

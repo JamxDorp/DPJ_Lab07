@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8402968374613003500}
   - component: {fileID: 8057973675386302811}
   - component: {fileID: 8999237519469139076}
+  - component: {fileID: 6929574785193870306}
   m_Layer: 3
   m_Name: BrickBlock
   m_TagString: Untagged
@@ -113,6 +114,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6929574785193870306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3712049295038513601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc7e98955b17474d9955c0642e2102c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BrickBlock
+  breakEffect: {fileID: 0}
+  breakSfx: {fileID: 8300000, guid: 029b5d61a5bf69d4ea695a9e60d35650, type: 3}
 --- !u!1 &9192023001144120631
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,6 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3989745428470888783}
   - component: {fileID: 6509236823742628343}
+  - component: {fileID: 8767840620255872618}
   m_Layer: 0
   m_Name: Hitbox
   m_TagString: Untagged
@@ -160,9 +176,21 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 0.038075328, z: 1}
   m_Center: {x: 0, y: -0.4889186, z: 0}
+--- !u!114 &8767840620255872618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9192023001144120631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66c0369a56ff82940b5b1eba288ae23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hitbox

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Audio;
 
 [RequireComponent(typeof(Collider))]
 public class CuriousBlock : MonoBehaviour , IHittable
@@ -27,6 +28,9 @@ public class CuriousBlock : MonoBehaviour , IHittable
     [Header("Visual Settings")]
     [SerializeField] public ParticleSystem popEffect;
     [SerializeField] public Material usedMaterial;
+
+    [Header("Audio Settings")]
+    [SerializeField] public AudioMixerGroup sfxGroup;
     [SerializeField] public AudioClip popSfx;
 
     private AudioSource audioSource;
@@ -39,6 +43,7 @@ public class CuriousBlock : MonoBehaviour , IHittable
         collider.isTrigger = false;
 
         audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.outputAudioMixerGroup = sfxGroup;
     }
 
     [ContextMenu("Hit From Below")]
@@ -61,7 +66,7 @@ public class CuriousBlock : MonoBehaviour , IHittable
 
         if (popSfx != null)
         {
-            audioSource.PlayOneShot(popSfx);
+            AudioManager.Instance.PlaySound(popSfx);
         }
 
         switch (contained)

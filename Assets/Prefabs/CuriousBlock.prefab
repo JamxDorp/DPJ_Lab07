@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 1903960543346466800}
   - component: {fileID: 3927482370030344652}
   - component: {fileID: 2555948412962093994}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CuriousBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,6 +198,7 @@ MonoBehaviour:
   coinLaunchForce: 5
   powerUpRiseEffect: 2
   popAnimationDuration: 0.5
-  popEffect: {fileID: 0}
+  popEffect: {fileID: 8131598879311476983, guid: 89b3f913246ef7f4d94a2ae85880baf7, type: 3}
   usedMaterial: {fileID: 2100000, guid: d2d33ee74df6012448ecf90762be545b, type: 2}
+  sfxGroup: {fileID: -6933653215050507310, guid: a855e309240111c4a8e00c23d8750b9e, type: 2}
   popSfx: {fileID: 8300000, guid: a77cc86a8f83f854589a939becc73253, type: 3}

@@ -13,6 +13,11 @@ public class BrickBlock : MonoBehaviour , IHittable
         collider.isTrigger = false;
     }
 
+    // The break sound is played through the AudioManager singleton (a persistent
+    // GameObject in the scene) using PlayOneShot, not PlayClipAtPoint, so its
+    // volume is fixed and no longer depends on the listener/camera position.
+    // PlayOneShot plays the clip independently on that AudioSource, so destroying
+    // this Brick Block right after does not cut the sound short — it plays in full.
     [ContextMenu("Hit From Below")]
     public void HitFromBelow()
     {
@@ -30,7 +35,7 @@ public class BrickBlock : MonoBehaviour , IHittable
 
         if (breakSfx != null)
         {
-            AudioSource.PlayClipAtPoint(breakSfx, transform.position);
+            AudioManager.Instance.PlaySound(breakSfx);
         }
 
         Destroy(gameObject);

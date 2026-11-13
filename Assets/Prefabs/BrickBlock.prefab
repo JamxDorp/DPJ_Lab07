@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdc7e98955b17474d9955c0642e2102c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BrickBlock
-  breakEffect: {fileID: 0}
+  breakEffect: {fileID: 5668703907440313680, guid: 4b5b0480860b7e24c9a7b6a46ca73e3f, type: 3}
   breakSfx: {fileID: 8300000, guid: 029b5d61a5bf69d4ea695a9e60d35650, type: 3}
 --- !u!1 &9192023001144120631
 GameObject:

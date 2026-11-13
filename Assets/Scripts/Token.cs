@@ -26,7 +26,7 @@ public class Token : MonoBehaviour
 
         if (pickupSfx != null)
         {
-            AudioSource.PlayClipAtPoint(pickupSfx, transform.position);
+            AudioManager.Instance.PlaySound(pickupSfx);
         }
 
         Destroy(gameObject);
